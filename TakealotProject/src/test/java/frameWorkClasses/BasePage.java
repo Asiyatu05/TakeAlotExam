@@ -119,21 +119,21 @@ public class BasePage {
 	   
 		    //create a method to get Element Text
 		public String getElementText (By pLocator) {
-			waitForClick(1000,pLocator);
+			waitForClick(10000,pLocator);
 			String h1 = getElement(pLocator).getText();
 			return h1;
 		}
 		    
 		    //create a method to click Element
 		public void clickElement(By pLocator) {
-			waitForClick(1000,pLocator);
+			waitForClick(10000,pLocator);
 			getElement(pLocator).click();
 		}
 		 
 		    
 		    //create a method to get Element
 		public WebElement getElement (By pLocator) {
-			waitForClick (1000,pLocator);
+			waitForClick (10000,pLocator);
 			return driver.findElement(pLocator);
 		}
 		    

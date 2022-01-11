@@ -34,7 +34,7 @@ public class Utilities extends BasePage {
 
 	       //Move image file to new destination
 	       //File DestFile=new File(fileWithPath);
-	       File DestFile=new File("target//"+"surefire-reports-" + getAppConfigProperties("build.timestamp") +"//images//"+ fileWithPath);
+	       File DestFile=new File("target/"+"surefire-reports-" + getAppConfigProperties("build.timestamp") +"/images/"+ fileWithPath);
 
 
 	       //Copy file at destination
@@ -55,12 +55,13 @@ public class Utilities extends BasePage {
 		    		//System.out.println(dtf.format(now));
 		}
 		
-		public String getAppConfigProperties(String propertyName) {
+		public String getAppConfigProperties(String propertyName) throws InterruptedException {
 			// Properties setup
 			Properties p = new Properties();
 			InputStream is = null;
 			try {
-				is = new FileInputStream(".\\target\\app.properties");
+				
+				is = new FileInputStream("./target/app.properties");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

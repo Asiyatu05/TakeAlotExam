@@ -5,7 +5,7 @@
 <listeners>
 		<listener class-name="listeners.Listeners">
 		</listener>
-	</listeners>
+	</listeners> 
 
   <test thread-count="5" name="Test">
     <classes>

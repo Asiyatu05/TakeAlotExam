@@ -19,7 +19,7 @@ public class SearchByBrandAndQuantity extends BasePage{
 
 		clickElement(By.name("search"));
 	}
-	//Searching for Brand & Qusantity
+	//Searching for Brand & Quantity
 	public void enterBrandName(String BrandName) {
  		
 		 EnterText(By.name("search"),BrandName);

@@ -33,7 +33,7 @@ public class DailyDealsTest {
    @Test(priority=1)
 	public void Given_NavigationToLandingPage_When_DailyDealsButtonIsClicked_And_OneBrandIsSelected_And_FirstItemClicked_Then_ItemIsAddedToCart() throws InterruptedException{
 		//sbq.goHome();
-		
+	   Thread.sleep(2000);
 		dd.clickDailyDealsButton();
 		
 		dd.selectOneBrand();
@@ -113,7 +113,7 @@ public class DailyDealsTest {
 		
 		sbq.clickSearch();
 		sbq.enterBrandName(Brand);
-		
+		Thread.sleep(2000);
 		sbq.clickOnSearch();
 		 
 		System.out.println("Brand & Quantity");
